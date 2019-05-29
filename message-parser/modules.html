@@ -1,0 +1,942 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@rocket.chat/message-parser</title>
+	<meta name="description" content="Documentation for @rocket.chat/message-parser">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@rocket.chat/message-parser</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>@rocket.chat/message-parser</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias"><a href="modules.html#astnode" class="tsd-kind-icon">ASTNode</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#bigemoji" class="tsd-kind-icon">Big<wbr>Emoji</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#blockquote" class="tsd-kind-icon">Blockquote</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#blocks" class="tsd-kind-icon">Blocks</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#bold" class="tsd-kind-icon">Bold</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#channelmention" class="tsd-kind-icon">Channel<wbr>Mention</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#code" class="tsd-kind-icon">Code</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#codeline" class="tsd-kind-icon">Code<wbr>Line</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#color" class="tsd-kind-icon">Color</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#emoji" class="tsd-kind-icon">Emoji</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#heading" class="tsd-kind-icon">Heading</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#inlinecode" class="tsd-kind-icon">Inline<wbr>Code</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#inlines" class="tsd-kind-icon">Inlines</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#italic" class="tsd-kind-icon">Italic</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#link" class="tsd-kind-icon">Link</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#listitem" class="tsd-kind-icon">List<wbr>Item</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#markdownast" class="tsd-kind-icon">MarkdownAST</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#markup" class="tsd-kind-icon">Markup</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#markupexcluding" class="tsd-kind-icon">Markup<wbr>Excluding</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#orderedlist" class="tsd-kind-icon">Ordered<wbr>List</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#paragraph" class="tsd-kind-icon">Paragraph</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#plain" class="tsd-kind-icon">Plain</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#quote" class="tsd-kind-icon">Quote</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#strike" class="tsd-kind-icon">Strike</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#task" class="tsd-kind-icon">Task</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#tasks" class="tsd-kind-icon">Tasks</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#types" class="tsd-kind-icon">Types</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#typeskeys" class="tsd-kind-icon">Types<wbr>Keys</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#unorderedlist" class="tsd-kind-icon">Unordered<wbr>List</a></li>
+								<li class="tsd-kind-type-alias"><a href="modules.html#usermention" class="tsd-kind-icon">User<wbr>Mention</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#isnodeoftype" class="tsd-kind-icon">is<wbr>Node<wbr>OfType</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#parser" class="tsd-kind-icon">parser</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="astnode" class="tsd-anchor"></a>
+					<h3>ASTNode</h3>
+					<div class="tsd-signature tsd-kind-icon">ASTNode<span class="tsd-signature-symbol">:</span> <a href="modules.html#bigemoji" class="tsd-signature-type" data-tsd-kind="Type alias">BigEmoji</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#bold" class="tsd-signature-type" data-tsd-kind="Type alias">Bold</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#paragraph" class="tsd-signature-type" data-tsd-kind="Type alias">Paragraph</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#italic" class="tsd-signature-type" data-tsd-kind="Type alias">Italic</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#strike" class="tsd-signature-type" data-tsd-kind="Type alias">Strike</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#code" class="tsd-signature-type" data-tsd-kind="Type alias">Code</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#codeline" class="tsd-signature-type" data-tsd-kind="Type alias">CodeLine</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#inlinecode" class="tsd-signature-type" data-tsd-kind="Type alias">InlineCode</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#heading" class="tsd-signature-type" data-tsd-kind="Type alias">Heading</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#quote" class="tsd-signature-type" data-tsd-kind="Type alias">Quote</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#link" class="tsd-signature-type" data-tsd-kind="Type alias">Link</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#usermention" class="tsd-signature-type" data-tsd-kind="Type alias">UserMention</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#channelmention" class="tsd-signature-type" data-tsd-kind="Type alias">ChannelMention</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#color" class="tsd-signature-type" data-tsd-kind="Type alias">Color</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#tasks" class="tsd-signature-type" data-tsd-kind="Type alias">Tasks</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L148">definitions.ts:148</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="bigemoji" class="tsd-anchor"></a>
+					<h3>Big<wbr>Emoji</h3>
+					<div class="tsd-signature tsd-kind-icon">Big<wbr>Emoji<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;BIG_EMOJI&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol">, </span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol">, </span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol">, </span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L46">definitions.ts:46</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;BIG_EMOJI&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol">, </span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol">, </span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol">, </span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="blockquote" class="tsd-anchor"></a>
+					<h3>Blockquote</h3>
+					<div class="tsd-signature tsd-kind-icon">Blockquote<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;BLOCKQUOTE&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#paragraph" class="tsd-signature-type" data-tsd-kind="Type alias">Paragraph</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L1">definitions.ts:1</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;BLOCKQUOTE&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#paragraph" class="tsd-signature-type" data-tsd-kind="Type alias">Paragraph</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="blocks" class="tsd-anchor"></a>
+					<h3>Blocks</h3>
+					<div class="tsd-signature tsd-kind-icon">Blocks<span class="tsd-signature-symbol">:</span> <a href="modules.html#code" class="tsd-signature-type" data-tsd-kind="Type alias">Code</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#heading" class="tsd-signature-type" data-tsd-kind="Type alias">Heading</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#quote" class="tsd-signature-type" data-tsd-kind="Type alias">Quote</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#listitem" class="tsd-signature-type" data-tsd-kind="Type alias">ListItem</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#tasks" class="tsd-signature-type" data-tsd-kind="Type alias">Tasks</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#orderedlist" class="tsd-signature-type" data-tsd-kind="Type alias">OrderedList</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#unorderedlist" class="tsd-signature-type" data-tsd-kind="Type alias">UnorderedList</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L181">definitions.ts:181</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="bold" class="tsd-anchor"></a>
+					<h3>Bold</h3>
+					<div class="tsd-signature tsd-kind-icon">Bold<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;BOLD&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#markupexcluding" class="tsd-signature-type" data-tsd-kind="Type alias">MarkupExcluding</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#bold" class="tsd-signature-type" data-tsd-kind="Type alias">Bold</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L81">definitions.ts:81</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;BOLD&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#markupexcluding" class="tsd-signature-type" data-tsd-kind="Type alias">MarkupExcluding</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#bold" class="tsd-signature-type" data-tsd-kind="Type alias">Bold</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="channelmention" class="tsd-anchor"></a>
+					<h3>Channel<wbr>Mention</h3>
+					<div class="tsd-signature tsd-kind-icon">Channel<wbr>Mention<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;MENTION_CHANNEL&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L119">definitions.ts:119</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;MENTION_CHANNEL&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="code" class="tsd-anchor"></a>
+					<h3>Code</h3>
+					<div class="tsd-signature tsd-kind-icon">Code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>language<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;CODE&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#codeline" class="tsd-signature-type" data-tsd-kind="Type alias">CodeLine</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L56">definitions.ts:56</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>language<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;CODE&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#codeline" class="tsd-signature-type" data-tsd-kind="Type alias">CodeLine</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="codeline" class="tsd-anchor"></a>
+					<h3>Code<wbr>Line</h3>
+					<div class="tsd-signature tsd-kind-icon">Code<wbr>Line<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;CODE_LINE&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L31">definitions.ts:31</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;CODE_LINE&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="color" class="tsd-anchor"></a>
+					<h3>Color</h3>
+					<div class="tsd-signature tsd-kind-icon">Color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;COLOR&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>g<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>r<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L36">definitions.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;COLOR&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>g<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>r<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>g<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>r<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="emoji" class="tsd-anchor"></a>
+					<h3>Emoji</h3>
+					<div class="tsd-signature tsd-kind-icon">Emoji<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;EMOJI&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L51">definitions.ts:51</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;EMOJI&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="heading" class="tsd-anchor"></a>
+					<h3>Heading</h3>
+					<div class="tsd-signature tsd-kind-icon">Heading<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>level<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">4</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;HEADING&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L67">definitions.ts:67</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>level<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">4</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;HEADING&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="inlinecode" class="tsd-anchor"></a>
+					<h3>Inline<wbr>Code</h3>
+					<div class="tsd-signature tsd-kind-icon">Inline<wbr>Code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;INLINE_CODE&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L62">definitions.ts:62</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;INLINE_CODE&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="inlines" class="tsd-anchor"></a>
+					<h3>Inlines</h3>
+					<div class="tsd-signature tsd-kind-icon">Inlines<span class="tsd-signature-symbol">:</span> <a href="modules.html#bold" class="tsd-signature-type" data-tsd-kind="Type alias">Bold</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#italic" class="tsd-signature-type" data-tsd-kind="Type alias">Italic</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#strike" class="tsd-signature-type" data-tsd-kind="Type alias">Strike</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#inlinecode" class="tsd-signature-type" data-tsd-kind="Type alias">InlineCode</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#link" class="tsd-signature-type" data-tsd-kind="Type alias">Link</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#usermention" class="tsd-signature-type" data-tsd-kind="Type alias">UserMention</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#channelmention" class="tsd-signature-type" data-tsd-kind="Type alias">ChannelMention</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#color" class="tsd-signature-type" data-tsd-kind="Type alias">Color</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L169">definitions.ts:169</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="italic" class="tsd-anchor"></a>
+					<h3>Italic</h3>
+					<div class="tsd-signature tsd-kind-icon">Italic<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;ITALIC&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#markupexcluding" class="tsd-signature-type" data-tsd-kind="Type alias">MarkupExcluding</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#italic" class="tsd-signature-type" data-tsd-kind="Type alias">Italic</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L86">definitions.ts:86</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;ITALIC&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#markupexcluding" class="tsd-signature-type" data-tsd-kind="Type alias">MarkupExcluding</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#italic" class="tsd-signature-type" data-tsd-kind="Type alias">Italic</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="link" class="tsd-anchor"></a>
+					<h3>Link</h3>
+					<div class="tsd-signature tsd-kind-icon">Link<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;LINK&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>label<span class="tsd-signature-symbol">: </span><a href="modules.html#markup" class="tsd-signature-type" data-tsd-kind="Type alias">Markup</a><span class="tsd-signature-symbol">; </span>src<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L106">definitions.ts:106</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;LINK&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>label<span class="tsd-signature-symbol">: </span><a href="modules.html#markup" class="tsd-signature-type" data-tsd-kind="Type alias">Markup</a><span class="tsd-signature-symbol">; </span>src<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>label<span class="tsd-signature-symbol">: </span><a href="modules.html#markup" class="tsd-signature-type" data-tsd-kind="Type alias">Markup</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>src<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="listitem" class="tsd-anchor"></a>
+					<h3>List<wbr>Item</h3>
+					<div class="tsd-signature tsd-kind-icon">List<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;LIST_ITEM&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#inlines" class="tsd-signature-type" data-tsd-kind="Type alias">Inlines</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L16">definitions.ts:16</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;LIST_ITEM&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#inlines" class="tsd-signature-type" data-tsd-kind="Type alias">Inlines</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="markdownast" class="tsd-anchor"></a>
+					<h3>MarkdownAST</h3>
+					<div class="tsd-signature tsd-kind-icon">MarkdownAST<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><a href="modules.html#paragraph" class="tsd-signature-type" data-tsd-kind="Type alias">Paragraph</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#blocks" class="tsd-signature-type" data-tsd-kind="Type alias">Blocks</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span><a href="modules.html#bigemoji" class="tsd-signature-type" data-tsd-kind="Type alias">BigEmoji</a><span class="tsd-signature-symbol">]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L190">definitions.ts:190</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="markup" class="tsd-anchor"></a>
+					<h3>Markup</h3>
+					<div class="tsd-signature tsd-kind-icon">Markup<span class="tsd-signature-symbol">:</span> <a href="modules.html#italic" class="tsd-signature-type" data-tsd-kind="Type alias">Italic</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#strike" class="tsd-signature-type" data-tsd-kind="Type alias">Strike</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#bold" class="tsd-signature-type" data-tsd-kind="Type alias">Bold</a><span class="tsd-signature-symbol"> | </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L78">definitions.ts:78</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="markupexcluding" class="tsd-anchor"></a>
+					<h3>Markup<wbr>Excluding</h3>
+					<div class="tsd-signature tsd-kind-icon">Markup<wbr>Excluding&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#markup" class="tsd-signature-type" data-tsd-kind="Type alias">Markup</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L79">definitions.ts:79</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T<span class="tsd-signature-symbol">: </span><a href="modules.html#markup" class="tsd-signature-type" data-tsd-kind="Type alias">Markup</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="orderedlist" class="tsd-anchor"></a>
+					<h3>Ordered<wbr>List</h3>
+					<div class="tsd-signature tsd-kind-icon">Ordered<wbr>List<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;ORDERED_LIST&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#listitem" class="tsd-signature-type" data-tsd-kind="Type alias">ListItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L6">definitions.ts:6</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;ORDERED_LIST&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#listitem" class="tsd-signature-type" data-tsd-kind="Type alias">ListItem</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="paragraph" class="tsd-anchor"></a>
+					<h3>Paragraph</h3>
+					<div class="tsd-signature tsd-kind-icon">Paragraph<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;PARAGRAPH&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#inlines" class="tsd-signature-type" data-tsd-kind="Type alias">Inlines</a><span class="tsd-signature-symbol">, </span><a href="modules.html#paragraph" class="tsd-signature-type" data-tsd-kind="Type alias">Paragraph</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L101">definitions.ts:101</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;PARAGRAPH&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#inlines" class="tsd-signature-type" data-tsd-kind="Type alias">Inlines</a><span class="tsd-signature-symbol">, </span><a href="modules.html#paragraph" class="tsd-signature-type" data-tsd-kind="Type alias">Paragraph</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="plain" class="tsd-anchor"></a>
+					<h3>Plain</h3>
+					<div class="tsd-signature tsd-kind-icon">Plain<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;PLAIN_TEXT&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L96">definitions.ts:96</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;PLAIN_TEXT&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="quote" class="tsd-anchor"></a>
+					<h3>Quote</h3>
+					<div class="tsd-signature tsd-kind-icon">Quote<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;QUOTE&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#paragraph" class="tsd-signature-type" data-tsd-kind="Type alias">Paragraph</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L73">definitions.ts:73</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;QUOTE&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#paragraph" class="tsd-signature-type" data-tsd-kind="Type alias">Paragraph</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="strike" class="tsd-anchor"></a>
+					<h3>Strike</h3>
+					<div class="tsd-signature tsd-kind-icon">Strike<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;STRIKE&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#markupexcluding" class="tsd-signature-type" data-tsd-kind="Type alias">MarkupExcluding</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#strike" class="tsd-signature-type" data-tsd-kind="Type alias">Strike</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L91">definitions.ts:91</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;STRIKE&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#markupexcluding" class="tsd-signature-type" data-tsd-kind="Type alias">MarkupExcluding</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#strike" class="tsd-signature-type" data-tsd-kind="Type alias">Strike</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="task" class="tsd-anchor"></a>
+					<h3>Task</h3>
+					<div class="tsd-signature tsd-kind-icon">Task<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;TASK&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#inlines" class="tsd-signature-type" data-tsd-kind="Type alias">Inlines</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L25">definitions.ts:25</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;TASK&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#inlines" class="tsd-signature-type" data-tsd-kind="Type alias">Inlines</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="tasks" class="tsd-anchor"></a>
+					<h3>Tasks</h3>
+					<div class="tsd-signature tsd-kind-icon">Tasks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;TASKS&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#task" class="tsd-signature-type" data-tsd-kind="Type alias">Task</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L21">definitions.ts:21</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;TASKS&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#task" class="tsd-signature-type" data-tsd-kind="Type alias">Task</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="types" class="tsd-anchor"></a>
+					<h3>Types</h3>
+					<div class="tsd-signature tsd-kind-icon">Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>BIG_EMOJI<span class="tsd-signature-symbol">: </span><a href="modules.html#bigemoji" class="tsd-signature-type" data-tsd-kind="Type alias">BigEmoji</a><span class="tsd-signature-symbol">; </span>BOLD<span class="tsd-signature-symbol">: </span><a href="modules.html#bold" class="tsd-signature-type" data-tsd-kind="Type alias">Bold</a><span class="tsd-signature-symbol">; </span>CODE<span class="tsd-signature-symbol">: </span><a href="modules.html#code" class="tsd-signature-type" data-tsd-kind="Type alias">Code</a><span class="tsd-signature-symbol">; </span>CODE_LINE<span class="tsd-signature-symbol">: </span><a href="modules.html#codeline" class="tsd-signature-type" data-tsd-kind="Type alias">CodeLine</a><span class="tsd-signature-symbol">; </span>COLOR<span class="tsd-signature-symbol">: </span><a href="modules.html#color" class="tsd-signature-type" data-tsd-kind="Type alias">Color</a><span class="tsd-signature-symbol">; </span>EMOJI<span class="tsd-signature-symbol">: </span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a><span class="tsd-signature-symbol">; </span>HEADING<span class="tsd-signature-symbol">: </span><a href="modules.html#heading" class="tsd-signature-type" data-tsd-kind="Type alias">Heading</a><span class="tsd-signature-symbol">; </span>INLINE_CODE<span class="tsd-signature-symbol">: </span><a href="modules.html#inlinecode" class="tsd-signature-type" data-tsd-kind="Type alias">InlineCode</a><span class="tsd-signature-symbol">; </span>ITALIC<span class="tsd-signature-symbol">: </span><a href="modules.html#italic" class="tsd-signature-type" data-tsd-kind="Type alias">Italic</a><span class="tsd-signature-symbol">; </span>LINK<span class="tsd-signature-symbol">: </span><a href="modules.html#link" class="tsd-signature-type" data-tsd-kind="Type alias">Link</a><span class="tsd-signature-symbol">; </span>LIST_ITEM<span class="tsd-signature-symbol">: </span><a href="modules.html#listitem" class="tsd-signature-type" data-tsd-kind="Type alias">ListItem</a><span class="tsd-signature-symbol">; </span>MENTION_CHANNEL<span class="tsd-signature-symbol">: </span><a href="modules.html#channelmention" class="tsd-signature-type" data-tsd-kind="Type alias">ChannelMention</a><span class="tsd-signature-symbol">; </span>MENTION_USER<span class="tsd-signature-symbol">: </span><a href="modules.html#usermention" class="tsd-signature-type" data-tsd-kind="Type alias">UserMention</a><span class="tsd-signature-symbol">; </span>ORDERED_LIST<span class="tsd-signature-symbol">: </span><a href="modules.html#orderedlist" class="tsd-signature-type" data-tsd-kind="Type alias">OrderedList</a><span class="tsd-signature-symbol">; </span>PARAGRAPH<span class="tsd-signature-symbol">: </span><a href="modules.html#paragraph" class="tsd-signature-type" data-tsd-kind="Type alias">Paragraph</a><span class="tsd-signature-symbol">; </span>PLAIN_TEXT<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a><span class="tsd-signature-symbol">; </span>QUOTE<span class="tsd-signature-symbol">: </span><a href="modules.html#quote" class="tsd-signature-type" data-tsd-kind="Type alias">Quote</a><span class="tsd-signature-symbol">; </span>STRIKE<span class="tsd-signature-symbol">: </span><a href="modules.html#strike" class="tsd-signature-type" data-tsd-kind="Type alias">Strike</a><span class="tsd-signature-symbol">; </span>TASK<span class="tsd-signature-symbol">: </span><a href="modules.html#task" class="tsd-signature-type" data-tsd-kind="Type alias">Task</a><span class="tsd-signature-symbol">; </span>TASKS<span class="tsd-signature-symbol">: </span><a href="modules.html#tasks" class="tsd-signature-type" data-tsd-kind="Type alias">Tasks</a><span class="tsd-signature-symbol">; </span>UNORDERED_LIST<span class="tsd-signature-symbol">: </span><a href="modules.html#unorderedlist" class="tsd-signature-type" data-tsd-kind="Type alias">UnorderedList</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L124">definitions.ts:124</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>BIG_<wbr>EMOJI<span class="tsd-signature-symbol">: </span><a href="modules.html#bigemoji" class="tsd-signature-type" data-tsd-kind="Type alias">BigEmoji</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>BOLD<span class="tsd-signature-symbol">: </span><a href="modules.html#bold" class="tsd-signature-type" data-tsd-kind="Type alias">Bold</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>CODE<span class="tsd-signature-symbol">: </span><a href="modules.html#code" class="tsd-signature-type" data-tsd-kind="Type alias">Code</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>CODE_<wbr>LINE<span class="tsd-signature-symbol">: </span><a href="modules.html#codeline" class="tsd-signature-type" data-tsd-kind="Type alias">CodeLine</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>COLOR<span class="tsd-signature-symbol">: </span><a href="modules.html#color" class="tsd-signature-type" data-tsd-kind="Type alias">Color</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>EMOJI<span class="tsd-signature-symbol">: </span><a href="modules.html#emoji" class="tsd-signature-type" data-tsd-kind="Type alias">Emoji</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>HEADING<span class="tsd-signature-symbol">: </span><a href="modules.html#heading" class="tsd-signature-type" data-tsd-kind="Type alias">Heading</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>INLINE_<wbr>CODE<span class="tsd-signature-symbol">: </span><a href="modules.html#inlinecode" class="tsd-signature-type" data-tsd-kind="Type alias">InlineCode</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>ITALIC<span class="tsd-signature-symbol">: </span><a href="modules.html#italic" class="tsd-signature-type" data-tsd-kind="Type alias">Italic</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>LINK<span class="tsd-signature-symbol">: </span><a href="modules.html#link" class="tsd-signature-type" data-tsd-kind="Type alias">Link</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>LIST_<wbr>ITEM<span class="tsd-signature-symbol">: </span><a href="modules.html#listitem" class="tsd-signature-type" data-tsd-kind="Type alias">ListItem</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>MENTION_<wbr>CHANNEL<span class="tsd-signature-symbol">: </span><a href="modules.html#channelmention" class="tsd-signature-type" data-tsd-kind="Type alias">ChannelMention</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>MENTION_<wbr>USER<span class="tsd-signature-symbol">: </span><a href="modules.html#usermention" class="tsd-signature-type" data-tsd-kind="Type alias">UserMention</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>ORDERED_<wbr>LIST<span class="tsd-signature-symbol">: </span><a href="modules.html#orderedlist" class="tsd-signature-type" data-tsd-kind="Type alias">OrderedList</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>PARAGRAPH<span class="tsd-signature-symbol">: </span><a href="modules.html#paragraph" class="tsd-signature-type" data-tsd-kind="Type alias">Paragraph</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>PLAIN_<wbr>TEXT<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>QUOTE<span class="tsd-signature-symbol">: </span><a href="modules.html#quote" class="tsd-signature-type" data-tsd-kind="Type alias">Quote</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>STRIKE<span class="tsd-signature-symbol">: </span><a href="modules.html#strike" class="tsd-signature-type" data-tsd-kind="Type alias">Strike</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>TASK<span class="tsd-signature-symbol">: </span><a href="modules.html#task" class="tsd-signature-type" data-tsd-kind="Type alias">Task</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>TASKS<span class="tsd-signature-symbol">: </span><a href="modules.html#tasks" class="tsd-signature-type" data-tsd-kind="Type alias">Tasks</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>UNORDERED_<wbr>LIST<span class="tsd-signature-symbol">: </span><a href="modules.html#unorderedlist" class="tsd-signature-type" data-tsd-kind="Type alias">UnorderedList</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="typeskeys" class="tsd-anchor"></a>
+					<h3>Types<wbr>Keys</h3>
+					<div class="tsd-signature tsd-kind-icon">Types<wbr>Keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><a href="modules.html#types" class="tsd-signature-type" data-tsd-kind="Type alias">Types</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L167">definitions.ts:167</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="unorderedlist" class="tsd-anchor"></a>
+					<h3>Unordered<wbr>List</h3>
+					<div class="tsd-signature tsd-kind-icon">Unordered<wbr>List<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;UNORDERED_LIST&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#listitem" class="tsd-signature-type" data-tsd-kind="Type alias">ListItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L11">definitions.ts:11</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;UNORDERED_LIST&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#listitem" class="tsd-signature-type" data-tsd-kind="Type alias">ListItem</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="usermention" class="tsd-anchor"></a>
+					<h3>User<wbr>Mention</h3>
+					<div class="tsd-signature tsd-kind-icon">User<wbr>Mention<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;MENTION_USER&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/definitions.ts#L114">definitions.ts:114</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;MENTION_USER&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="modules.html#plain" class="tsd-signature-type" data-tsd-kind="Type alias">Plain</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="isnodeoftype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Node<wbr>OfType</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Node<wbr>OfType&lt;N&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;type&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">N</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/guards.ts#L3">guards.ts:3</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>N<span class="tsd-signature-symbol">: </span><a href="modules.html#astnode" class="tsd-signature-type" data-tsd-kind="Type alias">ASTNode</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">unknown</span></h5>
+								</li>
+								<li>
+									<h5>type: <span class="tsd-signature-type">N</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;type&quot;</span><span class="tsd-signature-symbol">]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">N</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="parser" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> parser</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">parser<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#markdownast" class="tsd-signature-type" data-tsd-kind="Type alias">MarkdownAST</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/blob/7c7bccd/packages/message-parser/src/index.ts#L8">index.ts:8</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>input: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#markdownast" class="tsd-signature-type" data-tsd-kind="Type alias">MarkdownAST</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="current ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#astnode" class="tsd-kind-icon">ASTNode</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#bigemoji" class="tsd-kind-icon">Big<wbr>Emoji</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#blockquote" class="tsd-kind-icon">Blockquote</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#blocks" class="tsd-kind-icon">Blocks</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#bold" class="tsd-kind-icon">Bold</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#channelmention" class="tsd-kind-icon">Channel<wbr>Mention</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#code" class="tsd-kind-icon">Code</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#codeline" class="tsd-kind-icon">Code<wbr>Line</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#color" class="tsd-kind-icon">Color</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#emoji" class="tsd-kind-icon">Emoji</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#heading" class="tsd-kind-icon">Heading</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#inlinecode" class="tsd-kind-icon">Inline<wbr>Code</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#inlines" class="tsd-kind-icon">Inlines</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#italic" class="tsd-kind-icon">Italic</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#link" class="tsd-kind-icon">Link</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#listitem" class="tsd-kind-icon">List<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#markdownast" class="tsd-kind-icon">MarkdownAST</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#markup" class="tsd-kind-icon">Markup</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#markupexcluding" class="tsd-kind-icon">Markup<wbr>Excluding</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#orderedlist" class="tsd-kind-icon">Ordered<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#paragraph" class="tsd-kind-icon">Paragraph</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#plain" class="tsd-kind-icon">Plain</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#quote" class="tsd-kind-icon">Quote</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#strike" class="tsd-kind-icon">Strike</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#task" class="tsd-kind-icon">Task</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#tasks" class="tsd-kind-icon">Tasks</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#types" class="tsd-kind-icon">Types</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#typeskeys" class="tsd-kind-icon">Types<wbr>Keys</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#unorderedlist" class="tsd-kind-icon">Unordered<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#usermention" class="tsd-kind-icon">User<wbr>Mention</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#isnodeoftype" class="tsd-kind-icon">is<wbr>Node<wbr>OfType</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#parser" class="tsd-kind-icon">parser</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

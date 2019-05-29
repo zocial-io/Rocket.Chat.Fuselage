@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@rocket.chat/mp3-encoder</title>
+	<meta name="description" content="Documentation for @rocket.chat/mp3-encoder">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@rocket.chat/mp3-encoder</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>@rocket.chat/mp3-encoder</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<!--header-->
+				<p align="center">
+					<a href="https://rocket.chat" title="Rocket.Chat">
+						<img src="https://github.com/RocketChat/Rocket.Chat.Artwork/raw/master/Logos/2020/png/logo-horizontal-red.png" alt="Rocket.Chat" />
+					</a>
+				</p>
+				<a href="#rocketchatmp3-encoder" id="rocketchatmp3-encoder" style="color: inherit; text-decoration: none;">
+					<h1><code>@rocket.chat/mp3-encoder</code></h1>
+				</a>
+				<blockquote>
+					<p>A LAME encoder to be used in web workers</p>
+				</blockquote>
+				<hr>
+				<p><img src="https://img.shields.io/npm/v/@rocket.chat/mp3-encoder/latest?style=flat-square" alt="npm@latest"> <img src="https://img.shields.io/npm/v/@rocket.chat/mp3-encoder/next?style=flat-square" alt="npm@next"> <img src="https://img.shields.io/npm/dw/@rocket.chat/mp3-encoder?style=flat-square" alt="npm downloads"> <img src="https://img.shields.io/npm/l/@rocket.chat/mp3-encoder?style=flat-square" alt="License: MIT"></p>
+				<p><img src="https://img.shields.io/david/RocketChat/Rocket.Chat.Fuselage?path=packages%2Fmp3-encoder&style=flat-square" alt="deps"> <img src="https://img.shields.io/david/peer/RocketChat/Rocket.Chat.Fuselage?path=packages%2Fmp3-encoder&style=flat-square" alt="peer deps"> <img src="https://img.shields.io/david/dev/RocketChat/Rocket.Chat.Fuselage?path=packages%2Fmp3-encoder&style=flat-square" alt="dev deps"> <img src="https://img.shields.io/bundlephobia/min/@rocket.chat/mp3-encoder?style=flat-square" alt="npm bundle size"></p>
+				<!--/header-->
+				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+					<h2>Install</h2>
+				</a>
+				<!--install-->
+				<p>Add <code>@rocket.chat/mp3-encoder</code> as a dependency:</p>
+				<pre><code class="language-sh"><span style="color: #000000">npm i @rocket.chat/mp3-encoder</span>
+
+<span style="color: #008000"># or, if you are using yarn:</span>
+
+<span style="color: #000000">yarn add @rocket.chat/mp3-encoder</span>
+</code></pre>
+				<!--/install-->
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
+				</a>
+				<!--contributing(msg)-->
+				<p>Contributions, issues, and feature requests are welcome!<br />
+				Feel free to check the <a href="https://github.com/RocketChat/Rocket.Chat.Fuselage/issues">issues</a>.</p>
+				<!--/contributing(msg)-->
+				<a href="#building" id="building" style="color: inherit; text-decoration: none;">
+					<h3>Building</h3>
+				</a>
+				<p>As this package dependends on others in this monorepo, before anything run the following at the root directory:</p>
+				<!--yarn(build)-->
+				<pre><code class="language-sh"><span style="color: #000000">yarn build</span>
+</code></pre>
+				<!--/yarn(build)-->
+				<a href="#linting" id="linting" style="color: inherit; text-decoration: none;">
+					<h3>Linting</h3>
+				</a>
+				<p>To ensure the source is matching our coding style, we perform <a href="https://en.wikipedia.org/wiki/Lint_(software)">linting</a>.
+				Before commiting, check if your code fits our style by running:</p>
+				<!--yarn(lint)-->
+				<pre><code class="language-sh"><span style="color: #000000">yarn lint</span>
+</code></pre>
+				<!--/yarn(lint)-->
+				<p>Some linter warnings and errors can be automatically fixed:</p>
+				<!--yarn(lint-fix)-->
+				<pre><code class="language-sh"><span style="color: #000000">yarn lint-fix</span>
+</code></pre>
+				<!--/yarn(lint-fix)-->
+				<a href="#running-tests" id="running-tests" style="color: inherit; text-decoration: none;">
+					<h3>Running tests</h3>
+				</a>
+				<p>Whenever possible, add tests to describe exactly what your code do. You can run them by yourself:</p>
+				<!--yarn(test)-->
+				<pre><code class="language-sh"><span style="color: #000000">yarn </span><span style="color: #795E26">test</span>
+</code></pre>
+				<!--/yarn(test)-->
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
