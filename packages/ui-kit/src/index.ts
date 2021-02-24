@@ -47,3 +47,5 @@ export { uiKitModal } from './rendering/surfaces/uiKitModal';
 export { UiKitParserBanner } from './rendering/surfaces/UiKitParserBanner';
 export { UiKitParserMessage } from './rendering/surfaces/UiKitParserMessage';
 export { UiKitParserModal } from './rendering/surfaces/UiKitParserModal';
+
+export { jsx } from './rendering/jsx';
