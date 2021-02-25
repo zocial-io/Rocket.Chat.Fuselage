@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "main": "../dist/cjs/jsx/jsx-runtime.js",
+  "module": "../dist/esm/jsx/jsx-runtime.js",
+  "types": "../dist/esm/jsx/jsx-runtime.d.ts",
+  "typesVersions": {
+    "<4.1": {
+      "*": [
+        "../dist/ts3.4/jsx/*"
+      ]
+    }
+  }
+}

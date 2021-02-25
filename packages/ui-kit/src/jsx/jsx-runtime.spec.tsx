@@ -1,8 +1,6 @@
-/** @jsx jsx */
-/** @jsxFrag jsxFrag */
+/** @jsxImportSource . */
 
 import { Option } from '../blocks/Option';
-import { jsx, jsxFrag } from './jsx';
 
 describe('divider', () => {
   it('renders', () => {
