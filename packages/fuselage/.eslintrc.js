@@ -33,7 +33,12 @@ module.exports = {
     'react/jsx-fragments': ['error', 'syntax'],
     'react/react-in-jsx-scope': 'error',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': [
+      'warn',
+      {
+        additionalHooks: '(useIsomorphicLayoutEffect)',
+      },
+    ],
     'prettier/prettier': 2,
   },
   settings: {
