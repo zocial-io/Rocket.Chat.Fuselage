@@ -751,5 +751,11 @@
   },
   "balloon-exclamation": {
     "start": "\ue0cd"
+  },
+  "pause-unfilled": {
+    "start": "\ue0ce"
+  },
+  "shredder": {
+    "start": "\ue0d0"
   }
 }

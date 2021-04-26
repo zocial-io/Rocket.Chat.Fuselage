@@ -33,9 +33,10 @@ const Banner = ({
 
   variant = variants.includes(variant) ? variant : variants[0];
 
-  const closeButtonProps = useMemo(() => {
-    return variant !== variants[0] ? { [variant]: true } : {};
-  }, [variant]);
+  const closeButtonProps = useMemo(
+    () => (variant !== variants[0] ? { [variant]: true } : {}),
+    [variant]
+  );
 
   const handleBannerClick = useCallback(() => {
     if (onAction) {

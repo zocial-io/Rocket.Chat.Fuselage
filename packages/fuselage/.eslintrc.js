@@ -1,55 +1,15 @@
 module.exports = {
-  extends: ['@rocket.chat/eslint-config', 'prettier'],
-  plugins: ['react', 'react-hooks', 'prettier'],
-  parser: '@babel/eslint-parser',
+  extends: '@rocket.chat/eslint-config-alt/react',
   rules: {
-    'generator-star-spacing': ['error', 'before'],
-    'import/order': [
-      'error',
-      {
-        'newlines-between': 'always',
-        'groups': [
-          'builtin',
-          'external',
-          'internal',
-          ['parent', 'sibling', 'index'],
-        ],
-        'alphabetize': {
-          order: 'asc',
-        },
-      },
-    ],
-    'indent': [
-      'error',
-      2,
-      {
-        SwitchCase: 1,
-      },
-    ],
-    'jsx-quotes': ['error', 'prefer-single'],
-    'react/jsx-uses-react': 'error',
-    'react/jsx-uses-vars': 'error',
-    'react/jsx-no-undef': 'error',
-    'react/jsx-fragments': ['error', 'syntax'],
-    'react/react-in-jsx-scope': 'error',
-    'react-hooks/rules-of-hooks': 'error',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'react/display-name': 'off',
+    'react/no-multi-comp': 'off',
     'react-hooks/exhaustive-deps': [
       'warn',
       {
         additionalHooks: '(useIsomorphicLayoutEffect)',
       },
     ],
-    'prettier/prettier': 2,
-  },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    },
-    'react': {
-      version: 'detect',
-    },
   },
   env: {
     jest: true,
@@ -62,8 +22,9 @@ module.exports = {
         parser: '@babel/eslint-parser',
       },
       rules: {
-        'semi': 'off',
         'new-cap': 'off',
+        'prefer-arrow-callback': 'off',
+        'semi': 'off',
       },
     },
   ],
