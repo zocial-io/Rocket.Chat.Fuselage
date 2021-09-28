@@ -1,5 +1,6 @@
-import { Avatar, Box } from '@rocket.chat/fuselage';
 import React, { ComponentProps, ReactElement } from 'react';
+
+import { Avatar, Box } from '..';
 
 type ModalThumbProps = ComponentProps<typeof Avatar>;
 

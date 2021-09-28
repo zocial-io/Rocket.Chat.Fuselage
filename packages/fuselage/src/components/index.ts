@@ -21,7 +21,7 @@ export * from './Label';
 export { default as Margins } from './Margins';
 export * from './Menu';
 export * from './Message';
-export * from './Modal';
+export { default as Modal } from './Modal';
 export * from './MultiSelect';
 export * from './NumberInput';
 export * from './Options';
