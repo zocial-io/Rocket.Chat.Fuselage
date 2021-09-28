@@ -8,23 +8,13 @@ import { ModalIcon } from './ModalIcon';
 import { ModalThumb } from './ModalThumb';
 import { ModalTitle } from './ModalTitle';
 
-Modal.Backdrop = ModalBackdrop;
-Modal.Close = ModalClose;
-Modal.Content = ModalContent;
-Modal.Footer = ModalFooter;
-Modal.Header = ModalHeader;
-Modal.Thumb = ModalThumb;
-Modal.Title = ModalTitle;
-Modal.Icon = ModalIcon;
-
-export {
-  Modal,
-  ModalBackdrop,
-  ModalClose,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalThumb,
-  ModalTitle,
-  ModalIcon,
-};
+export default Object.assign(Modal, {
+  Backdrop: ModalBackdrop,
+  Close: ModalClose,
+  Content: ModalContent,
+  Footer: ModalFooter,
+  Header: ModalHeader,
+  Thumb: ModalThumb,
+  Title: ModalTitle,
+  Icon: ModalIcon,
+});

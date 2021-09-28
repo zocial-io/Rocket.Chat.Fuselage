@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Modal } from '../..';
+import { Modal } from './Modal';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
